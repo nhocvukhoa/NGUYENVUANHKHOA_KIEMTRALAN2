@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/thongtin"
+        android:background="#111111">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="NGUYỄN VŨ ANH KHOA - 1811505310118"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="#7af684">
+        </TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/tieude"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/thongtin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FC9D00">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đi chợ"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"
+               android:layout_marginLeft="40dp"
+                android:textColor="#fff"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trải nghiệm dễ dàng, nhẹ nhàng thanh toán"
+                android:textSize="20dp"
+               android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                ></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="500dp"
+          android:layout_height="160dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/banner"></RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ln"
+        android:layout_below="@+id/tieude"
+        android:layout_height="650dp">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="650dp">
+        </ListView>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:foreground="?attr/selectableItemBackground"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>
